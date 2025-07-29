@@ -1,67 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Rohan P | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Rohan P</h1>
-        <p>Operations Specialist | Automation & Risk Resolution</p>
-        <p>📍 Chennai, India | 📧 rohanpradeep164@gmail.com | 📞 +91 8086892963</p>
-        <p><a href="https://www.linkedin.com/in/rohan-p-1a55a022b" target="_blank">LinkedIn</a></p>
+        <p>🚀 Operations Specialist | Automation & Risk Resolution</p>
+        <div class="contact">
+            📍 Chennai, India | 📧 <a href="mailto:rohanpradeep164@gmail.com">rohanpradeep164@gmail.com</a> |
+            ☎️ +91 8086892963 |
+            <a href="https://www.linkedin.com/in/rohan-p-1a55a022b" target="_blank">LinkedIn</a>
+        </div>
     </header>
 
-    <section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <section id="about">
         <h2>About Me</h2>
         <p>
-            Detail-oriented operations and content specialist with 2+ years of experience in digital content QA,
-            automation, and stakeholder collaboration at Amazon Prime Video. Proven ability to investigate and resolve
-            large-scale metadata and platform issues, streamline processes through Python-based automation, and work
-            cross-functionally with product and engineering teams.
+            🔧 Detail-oriented operations and content specialist with 2+ years of experience in digital content QA,
+            automation, and stakeholder collaboration at Amazon Prime Video.
+            Proven ability to investigate and resolve platform issues, streamline workflows with Python,
+            and enhance content integrity through smart tools.
         </p>
     </section>
 
-    <section>
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>TARS – Ticket Assignee & Removal System</h3>
-            <p><strong>Tech:</strong> Python</p>
-            <p>Designed and deployed automated ticket assignment and cleanup system across 4 global sites. Reduced manual workload by 78% and improved ticket turnaround for 290+ daily tasks.</p>
-        </div>
-        <div class="project">
-            <h3>Automated Email Handover System</h3>
-            <p><strong>Tech:</strong> Python</p>
-            <p>Automated cross-site daily handover reporting. Eliminated distribution errors and manual reporting, boosting process reliability by 70%.</p>
-        </div>
-        <div class="project">
-            <h3>Browser Workflow Automation</h3>
-            <p><strong>Tech:</strong> Tampermonkey</p>
-            <p>Developed custom userscripts to highlight publishing errors visually in CMS. Reduced QA oversight errors and improved team efficiency.</p>
-        </div>
+    <section id="projects">
+        <h2>🚀 Featured Projects</h2>
+        <div class="project-card" onclick="openModal('modal1')">TARS – Ticket Assignee System</div>
+        <div class="project-card" onclick="openModal('modal2')">Automated Email Handover</div>
+        <div class="project-card" onclick="openModal('modal3')">Browser QA Scripts</div>
     </section>
 
-    <section>
-        <h2>Skills</h2>
+    <section id="skills">
+        <h2>🛠 Technical Skills</h2>
         <ul>
-            <li>Python (automation, reporting, scripting)</li>
-            <li>Tampermonkey (userscripts for QA)</li>
-            <li>Internal CMS Tools, QA Platforms</li>
-            <li>Excel, Google Sheets, Microsoft Word</li>
-            <li>Web & App Testing (Smart TV, Desktop, Mobile)</li>
-            <li>Cross-functional collaboration, RCA, process ownership</li>
+            <li><strong>Languages:</strong> Python, JavaScript (basic)</li>
+            <li><strong>Automation:</strong> Tampermonkey, scripting, reporting</li>
+            <li><strong>Platforms:</strong> Web & App QA (Smart TV, Desktop, Mobile)</li>
+            <li><strong>Tools:</strong> Excel, Google Sheets, CMS Tools</li>
+            <li><strong>Soft Skills:</strong> RCA, Process Ownership, Cross-Team Collab</li>
         </ul>
     </section>
 
-    <section>
-        <h2>Resume</h2>
-        <p><a href="resume.pdf" download>Download my resume (PDF)</a></p>
+    <section id="resume">
+        <h2>📄 Resume</h2>
+        <a href="resume.pdf" class="resume-button" download>⬇️ Download My Resume</a>
     </section>
 
     <footer>
-        <p>© 2025 Rohan P</p>
+        <p>🌟 Created with 💙 by Rohan P © 2025</p>
     </footer>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h3>TARS – Ticket Assignee & Removal System</h3>
+            <p>🧠 Developed a Python system across 4 sites, reducing manual processing by 78% for 290+ daily tickets.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h3>Automated Email Handover</h3>
+            <p>📬 Automated daily reporting between ops teams. Achieved 70% error reduction using Python scripting.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h3>Browser Workflow QA Scripts</h3>
+            <p>🎯 Built Tampermonkey scripts to visually highlight publishing errors and improve QA speed & accuracy.</p>
+        </div>
+    </div>
 </body>
 </html>
