@@ -27,15 +27,21 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            🔧 Detail-oriented operations and content specialist with 2+ years of experience in digital content QA,
-            automation, and stakeholder collaboration at Amazon Prime Video.
-            Proven ability to investigate and resolve platform issues, streamline workflows with Python,
-            and enhance content integrity through smart tools.
+            Operations and content analyst with 2+ years of experience in digital QA, ticket automation, and risk triage.
+            Specialized in metadata auditing, Python scripting, SOP streamlining, and platform issue escalation at Amazon Prime Video.
         </p>
     </section>
 
     <section id="projects">
         <h2>🚀 Featured Projects</h2>
+        <div class="project-card" onclick="openModal('modal1')">
+            <img src="images/tars.png" alt="TARS Preview">
+            <p>TARS – Ticket Assignee & Removal System</p>
+        </div>
+        <div class="project-card" onclick="openModal('modal2')">
+            <img src="images/email.png" alt="Email Handover Preview">
+            <p>Automated Email Handover</p>
+        </div>
         <div class="project-card" onclick="openModal('modal3')">
             <img src="images/qa.png" alt="QA Scripts Preview">
             <p>Browser QA Automation</p>
@@ -63,21 +69,43 @@ Testing(App,Web,Smart TV,etc.) </li>
         <p>🌟 Created with 💙 by Rohan P © 2025</p>
     </footer>
 
-    <!-- Modals -->
+    <!-- Project Modals with SAR -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h3>TARS – Ticket Assignee & Removal System</h3>
+            <img src="images/tars.png" class="modal-img" alt="TARS">
+            <p><strong>Situation:</strong> High ticket volume caused delays in assignment and resolution across global sites.</p>
+            <p><strong>Action:</strong> Built a Python system to automatically assign and clean up tickets in real-time.</p>
+            <p><strong>Result:</strong> Reduced manual workload by 78% and improved ticket turnaround for 290+ daily tasks.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h3>Automated Email Handover System</h3>
+            <img src="images/email.png" class="modal-img" alt="Email Automation">
+            <p><strong>Situation:</strong> Manual email handovers between shifts led to errors and miscommunication.</p>
+            <p><strong>Action:</strong> Created a Python automation to generate and send standardized handover reports daily.</p>
+            <p><strong>Result:</strong> Boosted reporting accuracy by 70% and improved reliability across shifts.</p>
+        </div>
+    </div>
+
     <div id="modal3" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal3')">&times;</span>
             <h3>Browser QA Automation – Tampermonkey Userscripts</h3>
             <img src="images/qa.png" class="modal-img" alt="QA Scripts">
-            <p><strong>Situation:</strong> Manual QA in browser workflows was repetitive and prone to oversight.</p>
-            <p><strong>Action:</strong> Developed multiple userscripts including:</p>
+            <p><strong>Situation:</strong> Manual QA tasks were repetitive and error-prone, especially during large-scale launches.</p>
+            <p><strong>Action:</strong> Developed userscripts to automate critical QA checks:</p>
             <ul>
-                <li>🏷 <strong>CTI Finder Script:</strong> Highlights customer tracking info for routing tickets</li>
-                <li>✉️ <strong>Correspondence Template Script:</strong> Automates standard ticket replies</li>
-                <li>🖋 <strong>Markdown Automation Script:</strong> Adds markdown to ticket responses</li>
-                <li>🎯 <strong>Value Highlighter Script:</strong> Detects metadata similarities for merge cases</li>
+                <li>🏷 CTI Finder – helps route tickets faster</li>
+                <li>✉️ Template Generator – pre-filled standard replies</li>
+                <li>🖋 Markdown Inserter – adds formatted text for clarity</li>
+                <li>🎯 Value Highlighter – detects common errors in merge cases</li>
             </ul>
-            <p><strong>Result:</strong> Improved QA accuracy, reduced oversight, and standardized ops workflows during peak load.</p>
+            <p><strong>Result:</strong> Improved QA accuracy, reduced oversight, and streamlined team workflows.</p>
         </div>
     </div>
 </body>
